@@ -8,8 +8,9 @@
 + [coconor](https://twitter.com/gansoslechu?s=17) [dice](https://twitter.com/gansoslechu/status/1153451334261194753?s=20): _"...algo que hice fue comentar en un excel cada paginas web, por ejemplo, [dplyr](http://www.dplyr.com) como reestructurar una base", y asi. Para cada pagina donde buscaba algo la volcaba a un excel y comentaba breve para que sirvio. Soy de tener muchas pestañas."_
 + 
 
-# Notas sobre los primeros pasos en R
+### Notas sobre los primeros pasos en R
 + 
   
-# Bibliografía en Español
+### Bibliografía en Español
 + [Ciencia de Datos Para Gente Sociable](https://bitsandbricks.github.io/ciencia_de_datos_gente_sociable/index.html)
++ [R para Ciencia de Datos](https://es.r4ds.hadley.nz/)
