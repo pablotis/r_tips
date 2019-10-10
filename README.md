@@ -7,6 +7,7 @@
 + Guardar los links que encontraste y te sirvieron en los marcadores favoritos de tu buscador (Firefox, Chrome, Internet Explorer (dejá de usar IE). Eso sí, no guardes de más, después podés no encontrar eso que guardaste!
 + [coconor](https://twitter.com/gansoslechu?s=17) [dice](https://twitter.com/gansoslechu/status/1153451334261194753?s=20): _"...algo que hice fue comentar en un excel cada paginas web, por ejemplo, [dplyr](http://www.dplyr.com) como reestructurar una base", y asi. Para cada pagina donde buscaba algo la volcaba a un excel y comentaba breve para que sirvio. Soy de tener muchas pestañas."_
 + Tenés Twitter? Armate una lista con usuarios que difunden info del mundo R y mantenete al tanto!
++ Tips para googlear ayuda, por [Data Carpentry](https://datacarpentry.org/semester-biology/materials/googling-for-help/)
 
 ### Notas sobre los primeros pasos en R
 + 
