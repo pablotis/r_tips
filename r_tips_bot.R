@@ -1,10 +1,10 @@
 #install.packages("twitteR")
 library("twitteR")
 
-consumerKey = '7WZfJVsDYRUsi5RN1RbhzRUZA'
-consumerSecret = 'RWoYLdopWWyiQbfB669H3q0BEhmbWey5SAT3Wxpcnfi3wHDEcM'
-accessToken = '4136598983-3mutLnmTApvjEXeOIZEpMDDDX42q3Qwi3z4jIL7'
-accessTokenSecret = 'LP3Nc3KTFiQ8LBaILS51Xpd9OTQo26mkxKR7pKWWlSxxw'
+consumerKey = 'xeKkhl9LnbgHJbkhcFYxFnOhg'
+consumerSecret = '7T1IwCH8pFuhyszaqvVPnTanuqtPJaE00IAkIrAJtqTYjwuRvZ'
+accessToken = '1214735980172845056-xkZoLBVuAIEvgyPU0lAY0Nz4GrF9Xt'
+accessTokenSecret = 'SrNctpaAk9OMVTkmbsYyTdsEs2CmbyU8NGx4KRRUDSDeI'
 
 setup_twitter_oauth(consumerKey,consumerSecret,accessToken,accessTokenSecret)
 
