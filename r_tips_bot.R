@@ -9,7 +9,7 @@ accessTokenSecret = 'SrNctpaAk9OMVTkmbsYyTdsEs2CmbyU8NGx4KRRUDSDeI'
 setup_twitter_oauth(consumerKey,consumerSecret,accessToken,accessTokenSecret)
 
 ### Cargo consejos
-texto <- read_lines("Atajos_txt.txt")
+texto <- read_lines("base/Atajos_txt.txt")
 
 random <- sample(texto, size = 1)
 
