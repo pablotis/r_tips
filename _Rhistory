@@ -1,0 +1,512 @@
+"Shift+F6", "Shift+F5", "Shift+F8",
+"Ctrl+Alt+F11", "Ctrl+Alt+F12", NA, "Ctrl+Alt+D",
+"Ctrl+Alt+M", "Ctrl+Up/Down", "Spacebar", "Enter",
+"Ctrl+Q", "Ctrl+Shift+F10", "Shift+Alt+T",
+"Shift+Alt+R", "Ctrl+Shift+L",
+"Ctrl+Shift+T", "Ctrl+Alt+F11", "Ctrl+Alt+F12"),
+Mac = c("Ctrl+2", "Ctrl+L", "Command+Left", "Command+Right",
+"Up/Down", "Command+Up", "Esc",
+"Ctrl+Shift+H", "Ctrl+.", "Ctrl+1", "Command+Shift+N",
+"Command+Shift+Alt+N", "Command+O",
+"Command+S", "Command+W", "Command+Option+W",
+"Command+Shift+W", "Command+Shift+K",
+"Command+Shift+K", "Command+Shift+K",
+"Command+Shift+K", "Command+Option+I", "Command+Shift+R",
+"Command+Enter", "Option+Enter",
+"Command+Shift+P", "Command+Option+R", "Command+Option+B",
+"Command+Option+E", "Command+Option+F",
+"Command+Option+T", "Command+Option+P",
+"Command+Option+C", "Command+Option+N",
+"Command+Shift+O", "Command+Shift+S",
+"Command+Shift+Enter", "Cmd+Option+L", "Cmd+Shift+Option+L",
+"Cmd+Option+O", "Cmd+Shift+Option+O",
+"Cmd+Shift+Option+G", "Cmd+Shift+Option+J",
+"Ctrl+Shift+.", "Ctrl+F11", "Ctrl+F12",
+"Ctrl+Shift+F11", "Ctrl+Shift+F12", "Cmd+F9",
+"Cmd+F10", "Command+Option+X", "Command+Option+V",
+"Command+I", "Command+Shift+C",
+"Command+Shift+/", "Command+Shift+A",
+"Command+Shift+Alt+P", "Ctrl+T", "Option+Up/Down",
+"Command+Option+Up/Down", "Ctrl+P", "Ctrl+Shift+E",
+"Ctrl+Shift+Alt+E", "Ctrl+Alt+Up",
+"Ctrl+Alt+Down", "Ctrl+Alt+Shift+Up",
+"Ctrl+Alt+Shift+Down", "Command+F", "Command+G",
+"Command+Shift+G", "Command+E", "Command+Shift+J",
+"Command+Shift+F", "F7", "Command+Z",
+"Command+Shift+Z", "Command+X", "Command+C", "Command+V",
+"Command+A", "Option+Left/Right",
+"Command+Home/End or Command+Up/Down", "Command+D",
+"Shift+[Arrow]", "Option+Shift+Left/Right",
+"Command+Shift+Left", "Command+Shift+Right",
+"Shift+PageUp/Down",
+"Command+Shift+Up/Down",
+"Option+Backspace or Ctrl+Option+Backspace", "Option+Delete", "Ctrl+K",
+"Option+Backspace", "Tab (at beginning of line)",
+"Shift+Tab", "Ctrl+U", "Ctrl+K", "Ctrl+Y",
+"Option+-", "Cmd+Shift+M", "F1", "F2",
+"Cmd+Option+U", "Tab or Command+Space", "Up/Down", "Enter,
+Tab, or Right", "Esc", "Ctrl+1", "Ctrl+2",
+"Ctrl+3", "Ctrl+4", "Ctrl+5", "Ctrl+6",
+"Ctrl+7", "Ctrl+8", "Ctrl+9", "Ctrl+0",
+"Cmd+F8", "Option+Shift+K", "Cmd+Shift+B",
+"Cmd+Shift+L", "Cmd+Shift+T", "Cmd+Alt+F7",
+"Cmd+Shift+E", "Cmd+Shift+D", "Shift+F9", "F10",
+"Shift+F4", "Shift+F6", "Shift+F5", "Shift+F8",
+"Command+Option+F11", "Command+Option+F12",
+NA, "Ctrl+Option+D", "Ctrl+Option+M",
+"Ctrl+Up/Down", "Spacebar", "Enter", "Command+Q",
+"Command+Shift+F10", "Shift+Option+T",
+"Shift+Option+R", "Ctrl+Shift+L", "Ctrl+Shift+T",
+"Ctrl+Option+F11", "Ctrl+Option+F12")
+)
+View(base_atajo)
+google.dataset.out <- translate(dataset = base_atajo,
+content.field ='Description_eng',
+google.api.key = my.api.key,
+source.lang ='en',
+target.lang ='es')
+base_atajo <- data.frame(stringsAsFactors=FALSE,
+Description_eng = c("Move cursor to Console", "Clear console",
+"Move cursor to beginning of line",
+"Move cursor to end of line",
+"Navigate command history", "Popup command history",
+"Interrupt currently executing command",
+"Change working directory", "Goto File/Function",
+"Move cursor to Source Editor",
+"New document (except on Chrome/Windows)",
+"New document (Chrome only)", "Open document",
+"Save active document",
+"Close active document (except on Chrome)", "Close active document (Chrome only)",
+"Close all open documents",
+"Preview HTML (Markdown and HTML)",
+"Knit Document (knitr)", "Compile Notebook",
+"Compile PDF (TeX and Sweave)", "Insert chunk (Sweave and Knitr)",
+"Insert code section",
+"Run current line/selection",
+"Run current line/selection (retain cursor position)",
+"Re-run previous region", "Run current document",
+"Run from document beginning to current line",
+"Run from current line to document end",
+"Run the current function definition",
+"Run the current code section", "Run previous Sweave/Rmd code",
+"Run the current Sweave/Rmd chunk",
+"Run the next Sweave/Rmd chunk", "Source a file",
+"Source the current document",
+"Source the current document (with echo)", "Fold Selected",
+"Unfold Selected", "Fold All", "Unfold All",
+"Go to line", "Jump to", "Switch to tab",
+"Previous tab", "Next tab", "First tab",
+"Last tab", "Navigate back", "Navigate forward",
+"Extract function from selection",
+"Extract variable from selection", "Reindent lines",
+"Comment/uncomment current line/selection",
+"Reflow Comment", "Reformat Selection",
+"Show Diagnostics", "Transpose Letters",
+"Move Lines Up/Down", "Copy Lines Up/Down",
+"Jump to Matching Brace/Paren",
+"Expand to Matching Brace/Paren",
+"Select to Matching Brace/Paren", "Add Cursor Above Current Cursor",
+"Add Cursor Below Current Cursor",
+"Move Active Cursor Up", "Move Active Cursor Down",
+"Find and Replace", "Find Next", "Find Previous",
+"Use Selection for Find",
+"Replace and Find", "Find in Files", "Check Spelling",
+"Undo", "Redo", "Cut", "Copy", "Paste",
+"Select All", "Jump to Word", "Jump to Start/End",
+"Delete Line", "Select", "Select Word",
+"Select to Line Start", "Select to Line End",
+"Select Page Up/Down", "Select to Start/End",
+"Delete Word Left", "Delete Word Right",
+"Delete to Line End", "Delete to Line Start",
+"Indent", "Outdent", "Yank line up to cursor",
+"Yank line after cursor",
+"Insert currently yanked text", "Insert assignment operator",
+"Insert pipe operator",
+"Show help for function at cursor",
+"Show source code for function at cursor",
+"Find usages for symbol at cursor (C++)", "Attempt completion",
+"Navigate candidates", "Accept selected candidate",
+"Dismiss completion popup",
+"Move focus to Source Editor", "Move focus to Console",
+"Move focus to Help", "Show History",
+"Show Files", "Show Plots", "Show Packages",
+"Show Environment", "Show Git/SVN", "Show Build",
+"Sync Editor & PDF Preview",
+"Show Keyboard Shortcut Reference", "Install and Restart",
+"Load All (devtools)", "Test Package (Desktop)",
+"Test Package (Web)", "Check Package",
+"Document Package", "Toggle Breakpoint",
+"Execute Next Line", "Step Into Function",
+"Finish Function/Loop", "Continue", "Stop Debugging",
+"Previous plot", "Next plot",
+"Diff active source document", "Commit changes",
+"Scroll diff view", "Stage/Unstage (Git)",
+"Stage/Unstage and move to next (Git)",
+"Quit Session (desktop only)", "Restart R Session",
+"New Terminal", "Rename Current Terminal",
+"Clear Current Terminal",
+"Move Focus to Terminal", "Previous Terminal", "Next Terminal"),
+Description_esp = c("Mueve el cursor a la consola", "Limpia la consola",
+"Mueve el cursor al comienzo de la línea de código",
+"Mueve el cursor al final de la línea de código",
+"Navegar por el historial de comandos",
+"Historial de comandos emergentes",
+"Interrumpir el comando actualmente en ejecución", "Cambiar directorio de trabajo",
+"Ir a archivo / función",
+"Mover el cursor al Editor de origen",
+"Nuevo documento (excepto en Chrome / Windows)",
+"Nuevo documento (solo Chrome)", "Documento abierto",
+"Guardar documento activo",
+"Cerrar documento activo (excepto en Chrome)",
+"Cerrar documento activo (solo Chrome)",
+"Cerrar todos los documentos abiertos",
+"Vista previa de HTML (Markdown y HTML)", "Documento de punto (knitr)",
+"Compilar cuaderno",
+"Compilar PDF (TeX y Sweave)",
+"Insertar trozo (Sweave and Knitr)", "Insertar sección de código",
+"Ejecutar línea / selección actual",
+"Ejecutar la línea / selección actual (conservar la posición del cursor)",
+"Vuelva a ejecutar la región anterior", "Ejecutar documento actual",
+"Ejecutar desde el documento que comienza hasta la línea actual",
+"Ejecutar desde la línea actual hasta el final del documento",
+"Ejecuta la definición de función actual",
+"Ejecute la sección de código actual",
+"Ejecute el código anterior de Sweave / Rmd",
+"Ejecute el fragmento de Sweave / Rmd actual",
+"Ejecute el siguiente trozo Sweave / Rmd",
+"Fuente de un archivo", "Fuente del documento actual",
+"Fuente del documento actual (con eco)",
+"Plegado Seleccionado",
+"Desplegar Seleccionado", "Doblar todo", "Desplegar todo",
+"Ir a la linea", "Salta a", "Cambiar a pestaña",
+"Pestaña anterior", "Pestaña siguiente",
+"Primera pestaña", "Última pestaña",
+"Navegar hacia atrás", "Navegar hacia adelante",
+"Extraer la función de la selección",
+"Extraer variable de selección", "Lineas de sangre",
+"Comentario / descomentar línea actual / selección", "Refluir comentario",
+"Selección de reformateo", "Mostrar diagnósticos",
+"Transponer letras", "Mover líneas arriba / abajo",
+"Copiar líneas arriba / abajo",
+"Saltar a Brace / Paren a juego",
+"Expandir a Brace / Paren a juego",
+"Seleccionar para juego de paréntesis / paréntesis",
+"Añadir cursor sobre el cursor actual",
+"Añadir cursor debajo del cursor actual",
+"Mover el cursor activo hacia arriba",
+"Mover el cursor activo hacia abajo", "Encontrar y reemplazar",
+"Encontrar siguiente", "Encontrar anterior",
+"Usar selección para buscar", "Reemplazar y buscar",
+"Buscar en archivos", "Revisar ortografía",
+"Deshacer", "Rehacer", "Cortar", "Copiar",
+"Pegar", "Seleccionar todo", "Saltar a la palabra",
+"Saltar al inicio / fin", "Eliminar línea",
+"Seleccione", "Seleccionar palabra",
+"Seleccionar para inicio de línea",
+"Seleccionar al final de línea",
+"Seleccionar página arriba / abajo",
+"Seleccionar para comenzar / finalizar", "Eliminar palabra izquierda",
+"Eliminar Word Right",
+"Eliminar al final de línea", "Eliminar al inicio de línea",
+"Sangrar", "Outdent", "Yank line up to cursor",
+"Línea Yank después del cursor",
+"Insertar texto actualmente arrancado",
+"Insertar operador de asignación",
+"Insertar operador de tubería",
+"Mostrar ayuda para la función en el cursor",
+"Mostrar el código fuente de la función en el cursor",
+"Encuentra usos para el símbolo en el cursor (C ++)",
+"Intento de completar", "Navegar candidatos",
+"Aceptar candidato seleccionado",
+"Descartar ventana emergente de finalización",
+"Mover el foco al Editor de origen", "Mover el foco a la consola",
+"Mover el foco a Ayuda", "Mostrar historia",
+"Mostrar archivos", "Mostrar parcelas",
+"Mostrar paquetes", "Mostrar entorno",
+"Mostrar Git / SVN", "Mostrar compilación",
+"Editor de sincronización y vista previa de PDF",
+"Mostrar referencia de acceso directo de teclado", "Instalar y reiniciar",
+"Cargar todo (devtools)", "Paquete de prueba (escritorio)",
+"Paquete de prueba (web)",
+"Comprobar paquete", "Paquete de documentos",
+"Punto de interrupción de palanca",
+"Ejecutar línea siguiente", "Paso a la función",
+"Función de acabado / bucle", "Seguir", "Dejar de depurar",
+"Parcela anterior", "Siguiente parcela", NA,
+NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,
+NA),
+Windows_Linux = c("Ctrl+2", "Ctrl+L", "Home", "End", "Up/Down", "Ctrl+Up",
+"Esc", "Ctrl+Shift+H", "Ctrl+.", "Ctrl+1",
+"Ctrl+Shift+N", "Ctrl+Alt+Shift+N",
+"Ctrl+O", "Ctrl+S", "Ctrl+W", "Ctrl+Alt+W",
+"Ctrl+Shift+W", "Ctrl+Shift+K", "Ctrl+Shift+K",
+"Ctrl+Shift+K", "Ctrl+Shift+K", "Ctrl+Alt+I",
+"Ctrl+Shift+R", "Ctrl+Enter", "Alt+Enter",
+"Ctrl+Shift+P", "Ctrl+Alt+R", "Ctrl+Alt+B",
+"Ctrl+Alt+E", "Ctrl+Alt+F", "Ctrl+Alt+T",
+"Ctrl+Alt+P", "Ctrl+Alt+C", "Ctrl+Alt+N",
+"Ctrl+Shift+O", "Ctrl+Shift+S",
+"Ctrl+Shift+Enter", "Alt+L", "Shift+Alt+L", "Alt+O",
+"Shift+Alt+O", "Shift+Alt+G", "Shift+Alt+J",
+"Ctrl+Shift+.", "Ctrl+F11", "Ctrl+F12",
+"Ctrl+Shift+F11", "Ctrl+Shift+F12", "Ctrl+F9",
+"Ctrl+F10", "Ctrl+Alt+X", "Ctrl+Alt+V", "Ctrl+I",
+"Ctrl+Shift+C", "Ctrl+Shift+/", "Ctrl+Shift+A",
+"Ctrl+Shift+Alt+P", NA, "Alt+Up/Down",
+"Shift+Alt+Up/Down", "Ctrl+P", "Ctrl+Shift+E",
+"Ctrl+Shift+Alt+E", "Ctrl+Alt+Up",
+"Ctrl+Alt+Down", "Ctrl+Alt+Shift+Up",
+"Ctrl+Alt+Shift+Down", "Ctrl+F", "Win: F3, Linux: Ctrl+G",
+"Win: Shift+F3, Linux: Ctrl+Shift+G",
+"Ctrl+F3", "Ctrl+Shift+J", "Ctrl+Shift+F", "F7",
+"Ctrl+Z", "Ctrl+Shift+Z", "Ctrl+X", "Ctrl+C",
+"Ctrl+V", "Ctrl+A", "Ctrl+Left/Right",
+"Ctrl+Home/End or Ctrl+Up/Down", "Ctrl+D",
+"Shift+[Arrow]", "Ctrl+Shift+Left/Right",
+"Alt+Shift+Left", "Alt+Shift+Right",
+"Shift+PageUp/PageDown",
+"Ctrl+Shift+Home/End or Shift+Alt+Up/Down", "Ctrl+Backspace", NA, NA, NA,
+"Tab (at beginning of line)", "Shift+Tab",
+"Ctrl+U", "Ctrl+K", "Ctrl+Y", "Alt+-",
+"Ctrl+Shift+M", "F1", "F2", "Ctrl+Alt+U",
+"Tab or Ctrl+Space", "Up/Down", "Enter, Tab, or Right",
+"Esc", "Ctrl+1", "Ctrl+2", "Ctrl+3",
+"Ctrl+4", "Ctrl+5", "Ctrl+6", "Ctrl+7", "Ctrl+8",
+"Ctrl+9", "Ctrl+0", "Ctrl+F8", "Alt+Shift+K",
+"Ctrl+Shift+B", "Ctrl+Shift+L",
+"Ctrl+Shift+T", "Ctrl+Alt+F7", "Ctrl+Shift+E",
+"Ctrl+Shift+D", "Shift+F9", "F10", "Shift+F4",
+"Shift+F6", "Shift+F5", "Shift+F8",
+"Ctrl+Alt+F11", "Ctrl+Alt+F12", "Ctrl+Alt+D",
+"Ctrl+Alt+M", "Ctrl+Up/Down", "Spacebar", "Enter",
+"Ctrl+Q", "Ctrl+Shift+F10", "Shift+Alt+T",
+"Shift+Alt+R", "Ctrl+Shift+L", "Ctrl+Shift+T",
+"Ctrl+Alt+F11", "Ctrl+Alt+F12"),
+Mac = c("Ctrl+2", "Ctrl+L", "Command+Left", "Command+Right",
+"Up/Down", "Command+Up", "Esc",
+"Ctrl+Shift+H", "Ctrl+.", "Ctrl+1", "Command+Shift+N",
+"Command+Shift+Alt+N", "Command+O",
+"Command+S", "Command+W", "Command+Option+W",
+"Command+Shift+W", "Command+Shift+K",
+"Command+Shift+K", "Command+Shift+K",
+"Command+Shift+K", "Command+Option+I", "Command+Shift+R",
+"Command+Enter", "Option+Enter",
+"Command+Shift+P", "Command+Option+R", "Command+Option+B",
+"Command+Option+E", "Command+Option+F",
+"Command+Option+T", "Command+Option+P",
+"Command+Option+C", "Command+Option+N",
+"Command+Shift+O", "Command+Shift+S",
+"Command+Shift+Enter", "Cmd+Option+L", "Cmd+Shift+Option+L",
+"Cmd+Option+O", "Cmd+Shift+Option+O",
+"Cmd+Shift+Option+G", "Cmd+Shift+Option+J",
+"Ctrl+Shift+.", "Ctrl+F11", "Ctrl+F12",
+"Ctrl+Shift+F11", "Ctrl+Shift+F12", "Cmd+F9",
+"Cmd+F10", "Command+Option+X", "Command+Option+V",
+"Command+I", "Command+Shift+C",
+"Command+Shift+/", "Command+Shift+A",
+"Command+Shift+Alt+P", "Ctrl+T", "Option+Up/Down",
+"Command+Option+Up/Down", "Ctrl+P", "Ctrl+Shift+E",
+"Ctrl+Shift+Alt+E", "Ctrl+Alt+Up",
+"Ctrl+Alt+Down", "Ctrl+Alt+Shift+Up",
+"Ctrl+Alt+Shift+Down", "Command+F", "Command+G",
+"Command+Shift+G", "Command+E", "Command+Shift+J",
+"Command+Shift+F", "F7", "Command+Z",
+"Command+Shift+Z", "Command+X", "Command+C", "Command+V",
+"Command+A", "Option+Left/Right",
+"Command+Home/End or Command+Up/Down", "Command+D",
+"Shift+[Arrow]", "Option+Shift+Left/Right",
+"Command+Shift+Left", "Command+Shift+Right",
+"Shift+PageUp/Down",
+"Command+Shift+Up/Down",
+"Option+Backspace or Ctrl+Option+Backspace", "Option+Delete", "Ctrl+K",
+"Option+Backspace", "Tab (at beginning of line)",
+"Shift+Tab", "Ctrl+U", "Ctrl+K", "Ctrl+Y",
+"Option+-", "Cmd+Shift+M", "F1", "F2",
+"Cmd+Option+U", "Tab or Command+Space", "Up/Down", "Enter,
+Tab, or Right", "Esc", "Ctrl+1", "Ctrl+2",
+"Ctrl+3", "Ctrl+4", "Ctrl+5", "Ctrl+6",
+"Ctrl+7", "Ctrl+8", "Ctrl+9", "Ctrl+0",
+"Cmd+F8", "Option+Shift+K", "Cmd+Shift+B",
+"Cmd+Shift+L", "Cmd+Shift+T", "Cmd+Alt+F7",
+"Cmd+Shift+E", "Cmd+Shift+D", "Shift+F9", "F10",
+"Shift+F4", "Shift+F6", "Shift+F5", "Shift+F8",
+"Command+Option+F11", "Command+Option+F12",
+"Ctrl+Option+D", "Ctrl+Option+M",
+"Ctrl+Up/Down", "Spacebar", "Enter", "Command+Q",
+"Command+Shift+F10", "Shift+Option+T",
+"Shift+Option+R", "Ctrl+Shift+L", "Ctrl+Shift+T",
+"Ctrl+Option+F11", "Ctrl+Option+F12")
+)
+View(base_atajo)
+devtools::install_github("gadenbuie/ermoji")
+addinslist:::addinslistAddin()
+tabla <- "| tabla | esta"
+tabla
+prueba <- "Descripción |
+esta"
+prueba
+prueba <- "Descripción /n
+esta"
+prueba
+prueba <- "Descripción /n esta"
+prueba
+prueba <- "Descripción \n esta"
+prueba
+install.packages("simsalapar")
+library(simsalapar)
+prueba <- base_atajo[1,]
+prueba
+toLatex(prueba)
+prueba <- as.character(base_atajo[1,])
+prueba
+toLatex(prueba)
+titulo <- colnames(base_atajo)
+titulo
+base_atajo
+dato <- as.character(base_atajo[1,])
+dato
+#toLatex(prueba)
+tuit <- paste0(titulo, dato)
+tuit
+?tweet
+install.packages('tm')
+require(tm)
+# build a corpus
+mydata.corpus <- Corpus(VectorSource(base_atajo))
+mydata.corpus
+mydata.dtm <- TermDocumentMatrix(mydata.corpus)
+mydata.dtm
+prueba
+random <- sample(texto, size = 1)
+random
+prueba <- paste(base_atajo$Description_eng, base_atajo$Windows_Linux)
+prueba
+prueba1 <- prueba[1,]
+prueba1 <- prueba[1]
+prueba1
+strwrap(x, width = 0.9 * getOption("width"), indent = 0,
+exdent = 0, prefix = "", simplify = TRUE, initial = prefix)
+strwrap(prueba1, width = 0.9 * getOption("width"), indent = 0,
+exdent = 0, prefix = "", simplify = TRUE, initial = prefix)
+strwrap(prueba1, width = 0.9 * getOption("width"), indent = 0,
+exdent = 0, prefix = "", simplify = TRUE)
+strwrap(prueba1, width = 0.9 * getOption("width"), indent = 5,
+exdent = 0, prefix = "", simplify = TRUE)
+prueba <- "estoy probando
+esta cosa
+porque no me cierra como hacerlo bien"
+strwrap(prueba, width = 0.9 * getOption("width"), indent = 5,
+exdent = 0, prefix = "", simplify = TRUE)
+strwrap(prueba, width = 0.9 * getOption("width"), indent = 5,
+exdent = 5, prefix = "", simplify = TRUE)
+strwrap(prueba, width = 0.9 * getOption("width"), indent = 5,
+exdent = 5, prefix = "|", simplify = TRUE)
+x <- paste(readLines(file.path(R.home("doc"), "THANKS")), collapse = "\n")
+x
+x <- unlist(strsplit(x, "\n[ \t\n]*\n"))[-(1:3)]
+x
+x <- paste(x, collapse = "\n\n")
+x
+writeLines(strwrap(x, width = 60))
+writeLines(strwrap(prueba, width = 60))
+writeLines(strwrap(prueba, width = 20))
+writeLines(strwrap(x, width = 60, indent = 5))
+writeLines(strwrap(prueba, width = 60, indent = 5))
+writeLines(strwrap(prueba, width = 60, indent = 5, exdent = 5)))
+writeLines(strwrap(prueba, width = 60, indent = 5, exdent = 5))
+prueba <- c("esto es", "una prueba", "para formatear", "texto")
+strwrap(prueba, width = 0.9 * getOption("width"), indent = 5,
+exdent = 5, prefix = "|", simplify = TRUE)
+strwrap(prueba, width = 0.9 * getOption("width"), indent = 5,
+exdent = 5, prefix = "|", simplify = TRUE, collapse = "\n")
+writeLines(strwrap(prueba, width = 60, indent = 5, exdent = 5))
+descripcion <- paste(base_atajo$Description_eng, base_atajo$Description_esp, sep = " | ")
+descripcion
+descripcion <- paste(base_atajo$Description_eng, base_atajo$Description_esp, sep = " | ")
+comando_win_lin <- base_atajo$Windows_Linux
+comando_mac <- base_atajo$Mac
+comando_mac
+glue('Atajo {descripcion},',
+'Comandos para Windows o Linux {comando_win_lin},',
+'Comandos para  {comando_mac},')
+library("tidyverse")
+glue('Atajo {descripcion},',
+'Comandos para Windows o Linux {comando_win_lin},',
+'Comandos para  {comando_mac},')
+descripcion <- paste(base_atajo$Description_eng, base_atajo$Description_esp, sep = " | ")
+comando_win_lin <- base_atajo$Windows_Linux
+comando_mac <- base_atajo$Mac
+glue('Atajo {descripcion},',
+'Comandos para Windows o Linux {comando_win_lin},',
+'Comandos para  {comando_mac}')
+glue::glue('Atajo {descripcion},',
+'Comandos para Windows o Linux {comando_win_lin},',
+'Comandos para  {comando_mac}')
+base_prueba <- base_atajo[1]
+base_prueba
+base_prueba <- base_atajo[,1]
+base_prueba
+View(base_atajo)
+base_prueba <- base_atajo[1,]
+base_prueba
+base_prueba <- base_atajo[1,]
+descripcion <- paste(base_prueba$Description_eng, base_prueba$Description_esp, sep = " | ")
+comando_win_lin <- base_prueba$Windows_Linux
+comando_mac <- base_prueba$Mac
+glue::glue('Atajo {descripcion},',
+'Comandos para Windows o Linux {comando_win_lin},',
+'Comandos para  {comando_mac}')
+glue::glue('Atajo: {descripcion},',
+'Comandos para Windows o Linux: {comando_win_lin},',
+'Comandos para Mac: {comando_mac}')
+writeLines(strwrap(glue::glue('Atajo: {descripcion},',
+'Comandos para Windows o Linux: {comando_win_lin},',
+'Comandos para Mac: {comando_mac}'),
+width = 60, indent = 5, exdent = 5))
+glue::glue('Atajo: {descripcion}',
+'Comandos para Windows o Linux: {comando_win_lin}',
+'Comandos para Mac: {comando_mac}')
+writeLines(strwrap(glue::glue('Atajo: {descripcion},',
+'Comandos para Windows o Linux: {comando_win_lin},',
+'Comandos para Mac: {comando_mac}'),
+width = 60, indent = 5, exdent = 5))
+glue::glue('Atajo: {descripcion} /h',
+'Comandos para Windows o Linux: {comando_win_lin}',
+'Comandos para Mac: {comando_mac}')
+glue::glue('Atajo: {descripcion} /n',
+'Comandos para Windows o Linux: {comando_win_lin}',
+'Comandos para Mac: {comando_mac}')
+glue::glue('Atajo: {descripcion} \n',
+'Comandos para Windows o Linux: {comando_win_lin}',
+'Comandos para Mac: {comando_mac}')
+glue::glue('Atajo: {descripcion} \n',
+'Comandos para Windows o Linux: {comando_win_lin} \n',
+'Comandos para Mac: {comando_mac}')
+writeLines(strwrap(glue::glue('Atajo: {descripcion} \n',
+'Comandos para Windows o Linux: {comando_win_lin} \n',
+'Comandos para Mac: {comando_mac}'),
+width = 60, indent = 5, exdent = 5))
+descripcion <- paste(base_prueba$Description_eng, base_prueba$Description_esp, sep = " / ")
+comando_win_lin <- base_prueba$Windows_Linux
+comando_mac <- base_prueba$Mac
+writeLines(strwrap(glue::glue('Atajo: {descripcion} \n',
+'Comandos para Windows o Linux: {comando_win_lin} \n',
+'Comandos para Mac: {comando_mac}'),
+width = 60, indent = 5, exdent = 5))
+writeLines(strwrap(glue::glue('Atajo: {descripcion} \n ',
+'Comandos para Windows o Linux: {comando_win_lin} \n ',
+'Comandos para Mac: {comando_mac}'),
+width = 60, indent = 5, exdent = 5))
+writeLines(strwrap(glue::glue('Atajo: {descripcion} \n ',
+'Comandos para Windows o Linux: {comando_win_lin} \n ',
+'Comandos para Mac: {comando_mac}'),
+indent = 5, exdent = 5))
+glue::glue('Atajo: {descripcion} \n ',
+'Comandos para Windows o Linux: {comando_win_lin} \n ',
+'Comandos para Mac: {comando_mac}')
+View(base_atajo)
+random <- sample(base_atajo[1,], size = 1)
+random
+random <- sample(base_atajo[1,])
+random
+base_prueba
