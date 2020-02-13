@@ -282,9 +282,9 @@ tuit <- glue::glue('  \n Rstudio Keyboards shortcuts[Atajos en el teclado] \n',
                    '\n Seccion de Rstudio: {referencia} \n ',
                    '\n --> {descripcion} \n',
                    " \n",
-                   ' - Windows | Linux: {comando_win_lin} \n ',
+                   '        - Windows | Linux: {comando_win_lin} \n ',
                    " \n",
-                   ' - Mac: {comando_mac} \n',
+                   '         - Mac: {comando_mac} \n',
                    '  \n',
                    '#rstats #rstatsES')
 
