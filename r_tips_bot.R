@@ -278,8 +278,8 @@ comando_win_lin <- base_tuit$Windows_Linux
 comando_mac <- base_tuit$Mac
 referencia <- base_tuit$Seccion
 
-tuit <- glue::glue('  \n Rstudio Keyboards shortcuts[Atajos en el teclado] \n',
-                   '\n Seccion de Rstudio: {referencia} \n ',
+tuit <- glue::glue('  \n Atajos en el teclado para Rstudio ⌨️ \n',
+                   '\n Seccion: {referencia} \n ',
                    '\n --> {descripcion} \n',
                    " \n",
                    '        - Windows | Linux: {comando_win_lin} \n ',
@@ -294,4 +294,4 @@ tuit <- glue::glue('  \n Rstudio Keyboards shortcuts[Atajos en el teclado] \n',
 #                    " \n \n",
 #                    'Mac: {comando_mac}')
 
-if(nchar(twit) <= 280) tweet(twit)
+if(nchar(tuit) <= 280) tweet(tuit)
