@@ -8,10 +8,10 @@ library(tidyverse)
 #install.packages("datapasta")
 
 ### Llaves de acceso a API Twitter
-consumerKey = 'xeKkhl9LnbgHJbkhcFYxFnOhg'
-consumerSecret = '7T1IwCH8pFuhyszaqvVPnTanuqtPJaE00IAkIrAJtqTYjwuRvZ'
-accessToken = '1214735980172845056-SYK0B3E7bJPoHj5b4kjIRShNoskiCZ'
-accessTokenSecret = 'URJX6yeIIY3r0c9C9HfzYWD3GqPeOn46VVooAmv2Ool5P'
+consumerKey = 'x'
+consumerSecret = 'x'
+accessToken = 'x'
+accessTokenSecret = 'x'
 
 setup_twitter_oauth(consumer_key = consumerKey, 
                     consumer_secret = consumerSecret, 
